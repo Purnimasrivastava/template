@@ -51,7 +51,7 @@ app.get('/weather',(req,res)=>{
                             lat:data.lat,
                             lng:data.lng,
                             place:data.place,
-                            temprator:dataa
+                            forcast:dataa
                         });
                     }
                     

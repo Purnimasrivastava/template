@@ -8,7 +8,8 @@ const forcast = (lat,lng,callback)=>{
         }else if(body.error){
             callback(body.error,undefined)
         }else{
-            callback(undefined,body.currently.temperature);
+            callback(undefined,'Currently temperature is '+body.currently.apparentTemperature+' and '+body.currently.summary+'.'
+            );
         }
     });
 }

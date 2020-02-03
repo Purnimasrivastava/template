@@ -19,8 +19,8 @@ weather.addEventListener('submit',(e)=>{
                 message.textContent = data.error;
                 message2.textContent="";
             }else{
-                message.textContent = "";
-                message2.textContent = 'you are looking for '+data.place+'. Geocoading info. for '+data.place+' is '+data.temprator+', and lat :'+data.lat+', lng '+data.lng+'.';
+                message2.textContent = "";
+                message.textContent = 'you are looking for '+data.place+'. Geocoading info. for '+data.place+' is '+data.forcast+', and lat :'+data.lat+', lng '+data.lng+'.';
             }
             
         })
