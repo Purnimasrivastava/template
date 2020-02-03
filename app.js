@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const geocoding = require('./geocoading');
 const forcast = require('./forcast');
 
+const port = process.env.PORT || 5000
 const  app = express();
 //define path
 const staticPath = path.join(__dirname,'assets');
@@ -73,6 +74,6 @@ app.get('*',(req,res)=>{
 })
 
 //server listening
-app.listen(5000,()=>{
-    console.log('server is running');
+app.listen(port,()=>{
+    console.log('server is running on '+port);
 });
